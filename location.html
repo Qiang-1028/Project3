@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-      #map {
-        height: 600px; 
-        width: 100%;  }
-    </style>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <title>Location</title>
-    
+  <style>
+    #map {height: 600px; width: 100%;  }
+  </style>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Location</title>
 </head>
-
 <body>
   <nav>
-  <ul>
-  <li><a href="index.html"><strong>My Resume</strong></a></li>
-   <li><a href="chicago.html"><strong>Chicago</strong></a></li>
-   <li><a href="audiR8.html"><strong>AudiR8</strong></a></li>
-   <li><a href="location.html"><strong>Location</strong></a></li>
-  </ul>
+    <ul>
+      <li><a href="index.html"><strong>My Resume</strong></a></li>
+      <li><a href="chicago.html"><strong>Chicago</strong></a></li>
+      <li><a href="audiR8.html"><strong>AudiR8</strong></a></li>
+      <li><a href="location.html"><strong>Location</strong></a></li>
+    </ul>
   </nav>
-  <h3>My home in Chicago
-  </h3>
-    <div id="map"></div>
-    <script>
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: 41.832042, lng:-87.612864};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 16, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-    </script>
-    <script async defer
+  <h3>My home in Chicago</h3>
+  <div id="map"></div>
+  <script>function initMap() {
+    var uluru = {lat: 41.832042, lng:-87.612864};
+    var map = new google.maps.Map(document.getElementById('map'), {zoom: 16, center: uluru});
+    var marker = new google.maps.Marker({position: uluru, map: map});}
+  </script>
+  <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvQrwL5WpdEQ-wKv7CKDbWER2UwYE-b-k&callback=initMap">
-    </script>
+  </script>
 </body>
