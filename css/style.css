@@ -1,43 +1,55 @@
-@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
 body {
   background-color: whitesmoke;
-  font-family: Georgia, serif;
+  font-family: 'Monoton', cursive;
   color:gray;
-  text-align:center;
-}
-
+  text-align:center;}
 ul{
- list-style-type: rectangular;
- color: black;
- text-align: center;
-}
-h1 ,h2, h3{
-	font-family: Georgia, serif;
-	font-size: 35px;
-	color: darkgray;
-}
-
-p {
-  color:gray;
-  font-family:Georgia, serif;
-}
-li {
-  color:gray;
-  font-family:Georgia, serif;
+  list-style-type: rectangular;
+  color: black;
+  text-align: center;
+  }
+  
+h1,h2{
+font-family:'Dancing Script', cursive;
+  font-size: 35px;
+  color: #87CEFA;
 }
 
+h3{
+  font-family: 'Monoton',cursive;
+  font-size: 30px;
+  color: #87CEFA;
+  }
+  
+h4  {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  color: black;
+  }
+  
+p{
+  color:#4169E1;
+  font-family: 'Dancing Script', cursive;
+  }
+  
+li{
+  color:#4169E1;
+  font-family: 'Dancing Script', cursive;
+  }
+  
 body,h1,h2,h3,h4,p {
-text-align:center;
+  text-align:center;
   margin-left: 0.2%;
-}
-
-
+  }
+  
 img {
+  vertical-align: middle;
   max-width: 100%;
-  height: auto;
-}
+  }
 
+  
 nav {
   text-align:center;
   width: 100%;
@@ -46,19 +58,28 @@ nav {
   list-style: none;
   margin: 0;
   padding: 0;
-
-}
-
+  background-color:linen;
+  }
+  
 nav li{
   display: inline;
   font-size: x-large;
+  }
   
-}
-
 nav a {
   display: inline-block;
-  color:gray;
-  font-family: sans-serif;
+  color:#4682B4;
+  font-family:  'Dancing Script', cursive;
   padding: 10px;
+  }
+  
+.hello li {
+  display: inline;
+}
+
+.hello a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
 }
 
