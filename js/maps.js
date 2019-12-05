@@ -17,15 +17,18 @@
       });
       var marker = new google.maps.Marker({
         position: home,
-        map: map
+        map: map,
+        icon: 'media/icon.png'
       });
       var marker2 = new google.maps.Marker({
         position:school, 
-        map: map
+        map: map,
+        icon: 'media/icon.png'
       });
       var marker3 = new google.maps.Marker({
         position:gym, 
-        map: map
+        map: map,
+        icon: 'media/icon.png'
       });
       var infoWindow = new google.maps.InfoWindow({
         content: 'My home'
