@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
   background-color: whitesmoke;
   font-family: 'Monoton', cursive;
   color:gray;
-  text-align:center;}
+  text-align:center;
+}
 ul{
   list-style-type: rectangular;
   color: black;
   text-align: center;
-  }
+}
   
 h1,h2{
 font-family:'Dancing Script', cursive;
@@ -21,35 +23,33 @@ h3{
   font-family: 'Monoton',cursive;
   font-size: 30px;
   color: #87CEFA;
-  }
+}
   
-h4  {
-  font-family: 'Dancing Script', cursive;
+h4 {
+  font-family: 'Roboto', sans-serif;;
   font-size: 20px;
   color: black;
-  }
+}
   
 p{
   color:#4169E1;
   font-family: 'Dancing Script', cursive;
-  }
+}
   
 li{
   color:#4169E1;
   font-family: 'Dancing Script', cursive;
-  }
+}
   
 body,h1,h2,h3,h4,p {
   text-align:center;
   margin-left: 0.2%;
-  }
+}
   
 img {
   vertical-align: middle;
   max-width: 100%;
-  }
-
-  
+}
 nav {
   text-align:center;
   width: 100%;
@@ -59,19 +59,24 @@ nav {
   margin: 0;
   padding: 0;
   background-color:linen;
-  }
+}
   
 nav li{
   display: inline;
   font-size: x-large;
-  }
+}
   
 nav a {
   display: inline-block;
   color:#4682B4;
   font-family:  'Dancing Script', cursive;
   padding: 10px;
-  }
+}
+  
+#map {
+  height: 600px; 
+  width: 100%;
+}
   
 .hello li {
   display: inline;
@@ -82,7 +87,7 @@ nav a {
   padding: 5px;
   text-decoration: none;
 }
-
+  /*slides in audiR8 page*/
 .slidebox{
   max-width: 1000px;
   position: relative;
@@ -99,3 +104,26 @@ nav a {
   text-align: center;
 }
 
+/*css media queries*/
+@media screen and (min-width: 300px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    padding: 0em 2em;
+  }
+  #map {
+    height: 200px;
+    width: 100%;
+  }
+  img {
+    vertical-align: middle;
+    max-width: 80%;
+  }
+  video {
+    width: 500px;
+    height: 380px;
+    border: 1px solid black;
+  }
+}
